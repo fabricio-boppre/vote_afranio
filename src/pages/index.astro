@@ -1,6 +1,13 @@
 ---
 import "../styles/index.css"
 import { css } from "../../styled-system/css"
+import { flex } from "../../styled-system/patterns"
+
+const socialHeaderLinks = flex({
+  mx: "10px",
+  h: "24px",
+  "& img": { mr: "5px" },
+})
 ---
 
 <html lang="en">
@@ -12,9 +19,46 @@ import { css } from "../../styled-system/css"
     <title>Afrânio 2024</title>
     <meta name="robots" content="noindex" />
   </head>
-  <body>
-    <div class={css({ fontSize: "2xl", fontWeight: "bold" })}>
-      Em construção.
+  <body class={css({ maxW: "1920px", m: "0 auto" })}>
+    <div
+      id="header"
+      class={flex({
+        justifyContent: "center",
+        alignItems: "center",
+        bg: "greenHeader",
+        h: "120px",
+        textAlign: "center",
+        pt: "60px",
+        "& a": {
+          color: "white",
+        },
+      })}
+    >
+      <a href="" target="_blank" class={socialHeaderLinks}>
+        <img src="/images/social-instagram.svg" />
+        Instagram</a
+      >
+      <a href="" target="_blank" class={socialHeaderLinks}>
+        <img src="/images/social-threads.svg" />
+        Threads</a
+      >
+      <img
+        class={css({ h: "113px", w: "169px", mx: "20px" })}
+        src="/images/logo-small.svg"
+        alt="Afrânio 50100"
+      />
+      <a href="" target="_blank">
+        <a href="" target="_blank" class={socialHeaderLinks}>
+          <img src="/images/social-facebook.svg" />
+          Facebook</a
+        >
+        <a href="" target="_blank">
+          <a href="" target="_blank" class={socialHeaderLinks}>
+            <img src="/images/social-twitter.svg" />
+            Twitter</a
+          >
+        </a>
+      </a>
     </div>
   </body>
 </html>

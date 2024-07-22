@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="14.327"
+   height="19.92"
+   viewBox="0 0 14.327 19.92"
+   version="1.1"
+   id="svg183"
+   sodipodi:docname="social-facebook.svg"
+   inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs187" />
+  <sodipodi:namedview
+     id="namedview185"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="44.026104"
+     inkscape:cx="4.1906956"
+     inkscape:cy="9.9713569"
+     inkscape:window-width="2560"
+     inkscape:window-height="1080"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg183" />
+  <path
+     id="facebook"
+     d="m 9.586,0 a 23.855,23.855 0 0 1 2.741,0.147 v 3.181 h -1.86 c -1.468,0 -1.762,0.685 -1.762,1.713 v 2.251 h 3.524 l -0.44,3.524 H 8.754 v 9.1 H 5.083 v -9.1 H 2 V 7.293 H 5.083 V 4.7 C 5.083,1.665 6.943,0 9.635,0 Z"
+     fill="#ffffff"
+     fill-rule="evenodd" />
+</svg>

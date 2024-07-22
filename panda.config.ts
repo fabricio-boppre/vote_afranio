@@ -1,4 +1,4 @@
-import { defineConfig } from "@pandacss/dev";
+import { defineConfig } from "@pandacss/dev"
 
 export default defineConfig({
   // Whether to use css reset
@@ -15,9 +15,15 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    extend: {},
+    extend: {
+      tokens: {
+        colors: {
+          greenHeader: { value: "#00D087" },
+        },
+      },
+    },
   },
 
   // The output directory for your css system
   outdir: "styled-system",
-});
+})
