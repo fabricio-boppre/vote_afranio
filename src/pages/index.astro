@@ -4,9 +4,15 @@ import { css } from "../../styled-system/css"
 import { flex } from "../../styled-system/patterns"
 
 const socialHeaderLinks = flex({
-  mx: "10px",
-  h: "24px",
-  "& img": { mr: "5px" },
+  alignItems: "center",
+  mx: [undefined, "20px", "10px"],
+  h: "30px",
+  fontFamily: "GeneralSansSemibold, sans-serif",
+  fontSize: "18px",
+  textShadow: "0px 3px 6px #00000029",
+  "& img": { mr: "10px", h: [undefined, "30px", "24px"] },
+  "& span": { display: ["none", undefined, "inline"] },
+  hideBelow: "sm",
 })
 ---
 
@@ -20,45 +26,72 @@ const socialHeaderLinks = flex({
     <meta name="robots" content="noindex" />
   </head>
   <body class={css({ maxW: "1920px", m: "0 auto" })}>
-    <div
-      id="header"
+    <header
       class={flex({
         justifyContent: "center",
         alignItems: "center",
         bg: "greenHeader",
-        h: "120px",
+        h: "100px",
         textAlign: "center",
-        pt: "60px",
+        pt: "40px",
         "& a": {
           color: "white",
         },
       })}
     >
-      <a href="" target="_blank" class={socialHeaderLinks}>
-        <img src="/images/social-instagram.svg" />
-        Instagram</a
+      <a
+        href="https://www.instagram.com/afranioboppre50/"
+        target="_blank"
+        class={socialHeaderLinks}
       >
-      <a href="" target="_blank" class={socialHeaderLinks}>
+        <img src="/images/social-instagram.svg" />
+        <span>Instagram</span></a
+      >
+      <a
+        href="https://www.threads.net/@afranioboppre50"
+        target="_blank"
+        class={socialHeaderLinks}
+      >
         <img src="/images/social-threads.svg" />
-        Threads</a
+        <span>Threads</span></a
       >
       <img
-        class={css({ h: "113px", w: "169px", mx: "20px" })}
+        class={css({ h: "113px", w: "169px", mx: "20px", mt: "10px" })}
         src="/images/logo-small.svg"
         alt="Afrânio 50100"
       />
-      <a href="" target="_blank">
-        <a href="" target="_blank" class={socialHeaderLinks}>
-          <img src="/images/social-facebook.svg" />
-          Facebook</a
-        >
-        <a href="" target="_blank">
-          <a href="" target="_blank" class={socialHeaderLinks}>
-            <img src="/images/social-twitter.svg" />
-            Twitter</a
-          >
-        </a>
-      </a>
+      <a
+        href="https://www.facebook.com/afranioboppre50"
+        target="_blank"
+        class={socialHeaderLinks}
+      >
+        <img src="/images/social-facebook.svg" />
+        <span>Facebook</span></a
+      >
+      <a
+        href="https://x.com/afranioboppre50"
+        target="_blank"
+        class={socialHeaderLinks}
+      >
+        <img src="/images/social-twitter.svg" />
+        <span>Twitter</span></a
+      >
+    </header>
+    <div
+      class={flex({
+        alignItems: "flex-end",
+        bgImage: "url(/images/afranio_ponte.webp)",
+        bgRepeat: "no-repeat",
+        bgPosition: "center top",
+        h: "700px",
+        px: "20px",
+      })}
+    >
+      <img
+        class={css({ mx: "auto" })}
+        src="/images/logo-big.svg"
+        alt="Afrânio 50100"
+      />
     </div>
   </body>
 </html>
