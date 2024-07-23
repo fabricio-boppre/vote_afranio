@@ -25,3 +25,8 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* FALLBACKS TO NO SUPPORTING OF WEBP: */
+.no-webp > body > div#welcome {
+  background-image: url(/images/afranio_ponte.jpg);
+}

@@ -24,6 +24,7 @@ const socialHeaderLinks = flex({
     <meta name="generator" content={Astro.generator} />
     <title>Afrânio 2024</title>
     <meta name="robots" content="noindex" />
+    <script is:inline src="/scripts/modernizr-custom.js"></script>
   </head>
   <body class={css({ maxW: "1920px", m: "0 auto" })}>
     <header
@@ -31,7 +32,7 @@ const socialHeaderLinks = flex({
         justifyContent: "center",
         alignItems: "center",
         bg: "greenHeader",
-        h: "100px",
+        h: "var(--header-height)",
         textAlign: "center",
         pt: "40px",
         "& a": {
@@ -78,17 +79,28 @@ const socialHeaderLinks = flex({
       >
     </header>
     <div
+      id="welcome"
       class={flex({
         alignItems: "flex-end",
         bgImage: "url(/images/afranio_ponte.webp)",
         bgRepeat: "no-repeat",
         bgPosition: "center top",
-        h: "700px",
+        bgSize: "cover",
+        h: [
+          "450px",
+          "calc(100vh - (var(--header-height) + var(--big-image-bottom-white-space)))",
+        ],
+        maxH: "700px",
         px: "20px",
       })}
     >
       <img
-        class={css({ mx: "auto" })}
+        class={css({
+          mx: "auto",
+          mb: "calc(-1 * var(--big-image-bottom-white-space))",
+          h: "auto",
+          w: ["450px", "550px"],
+        })}
         src="/images/logo-big.svg"
         alt="Afrânio 50100"
       />

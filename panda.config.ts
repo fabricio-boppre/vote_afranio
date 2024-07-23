@@ -13,6 +13,11 @@ export default defineConfig({
   // Files to exclude
   exclude: [],
 
+  globalVars: {
+    "--header-height": "100px",
+    "--big-image-bottom-white-space": "50px",
+  },
+
   // Useful for theme customization
   theme: {
     extend: {
