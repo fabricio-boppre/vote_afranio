@@ -31,8 +31,8 @@ const socialHeaderLinks = flex({
       class={flex({
         justifyContent: "center",
         alignItems: "center",
-        bg: "greenHeader",
-        h: "var(--header-height)",
+        bgColor: "greenHeader",
+        h: "headerHeight",
         textAlign: "center",
         pt: "40px",
         "& a": {
@@ -78,7 +78,8 @@ const socialHeaderLinks = flex({
         <span>Twitter</span></a
       >
     </header>
-    <div
+
+    <section
       id="welcome"
       class={flex({
         alignItems: "flex-end",
@@ -88,7 +89,7 @@ const socialHeaderLinks = flex({
         bgSize: "cover",
         h: [
           "450px",
-          "calc(100vh - (var(--header-height) + var(--big-image-bottom-white-space)))",
+          "calc(100vh - (var(--sizes-header-height) + var(--sizes-big-image-bottom-white-space)))",
         ],
         maxH: "700px",
         px: "20px",
@@ -97,13 +98,86 @@ const socialHeaderLinks = flex({
       <img
         class={css({
           mx: "auto",
-          mb: "calc(-1 * var(--big-image-bottom-white-space))",
+          mb: "calc(-1 * var(--sizes-big-image-bottom-white-space))",
           h: "auto",
           w: ["450px", "550px"],
         })}
         src="/images/logo-big.svg"
         alt="Afrânio 50100"
       />
-    </div>
+    </section>
+
+    <section
+      id="about"
+      class={css({ layerStyle: "internalContent", my: "120px 100px" })}
+    >
+      <div
+        class={flex({
+          alignItems: ["center", "flex-start"],
+          flexDirection: ["column", "row"],
+        })}
+      >
+        <h1
+          class={css({
+            textStyle: "titleFirstLevel",
+            flexBasis: [undefined, "40%"],
+            p: ["0 0 40px 0", "0 20px 0 0"],
+            textAlign: ["center", "left"],
+          })}
+        >
+          Conheça o candidato
+        </h1>
+        <div
+          class={css({
+            bgColor: "redBox",
+            mt: "40px",
+            rounded: "boxRadius",
+            flexBasis: [undefined, "60%"],
+          })}
+        >
+          <h2
+            class={css({
+              textStyle: "titleSecondLevel",
+              bgColor: "orangeBox",
+              w: "fit-content",
+              p: "15px 30px 10px 30px",
+              m: ["-40px auto 0 auto", "-40px 0 0 20px"],
+              transform: "rotate(-2deg)",
+            })}
+          >
+            Ver. Afrânio Boppré
+          </h2>
+          <div
+            class={css({
+              p: ["20px 30px 30px 30px", undefined, "20px 50px 30px 50px"],
+            })}
+          >
+            <p
+              class={css({
+                textStyle: "body",
+                color: "white",
+                mb: "20px",
+              })}
+            >
+              Afrânio é um lutador. Está presente no dia a dia da cidade. Seja
+              na defesa da democracia ou para combater a corrupção, apoiar os
+              direitos do povo trabalhador, o serviço público de qualidade ou
+              buscar solução para um problema no bairro, você pode contar com
+              ele.
+            </p>
+            <p
+              class={css({
+                textStyle: "body",
+                fontFamily: "GeneralSansBold",
+                color: "black",
+              })}
+            >
+              POR SUA TRAJETÓRIA E ATUAÇÃO EXEMPLAR, AFRÂNIO É UM VEREADOR
+              NECESSÁRIO.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
