@@ -1,0 +1,34 @@
+---
+import "../styles/index.css"
+import { flex } from "../../styled-system/patterns"
+import { css } from "../../styled-system/css"
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Página inexistente</title>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <div
+      class={flex({
+        textAlign: "center",
+        alignItems: "center",
+        justifyContent: "center",
+        h: "100vh",
+        fontSize: "25px",
+      })}
+    >
+      <p class={css({ m: "20px" })}>
+        Este endereço não corresponde a nenhuma tela deste site.
+        <a href="./" class={css({ textDecoration: "underline" })}
+          >Clique aqui para acessar nossa tela principal.</a
+        >
+      </p>
+    </div>
+  </body>
+</html>
