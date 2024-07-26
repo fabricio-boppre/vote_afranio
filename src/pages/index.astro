@@ -2,18 +2,6 @@
 import "../styles/index.css"
 import { css } from "../../styled-system/css"
 import { flex } from "../../styled-system/patterns"
-
-const socialHeaderLinks = flex({
-  alignItems: "center",
-  mx: [undefined, "20px", "10px"],
-  h: "30px",
-  fontFamily: "GeneralSansSemibold, sans-serif",
-  fontSize: "18px",
-  textShadow: "0px 3px 6px #00000029",
-  "& img": { mr: "10px", h: [undefined, "30px", "24px"] },
-  "& span": { display: ["none", undefined, "inline"] },
-  hideBelow: "sm",
-})
 ---
 
 <html lang="en">
@@ -43,7 +31,7 @@ const socialHeaderLinks = flex({
       <a
         href="https://www.instagram.com/afranioboppre50/"
         target="_blank"
-        class={socialHeaderLinks}
+        class={flex({ layerStyle: "socialHeaderLinks" })}
       >
         <img src="/images/social-instagram.svg" />
         <span>Instagram</span></a
@@ -51,7 +39,7 @@ const socialHeaderLinks = flex({
       <a
         href="https://www.threads.net/@afranioboppre50"
         target="_blank"
-        class={socialHeaderLinks}
+        class={flex({ layerStyle: "socialHeaderLinks" })}
       >
         <img src="/images/social-threads.svg" />
         <span>Threads</span></a
@@ -64,7 +52,7 @@ const socialHeaderLinks = flex({
       <a
         href="https://www.facebook.com/afranioboppre50"
         target="_blank"
-        class={socialHeaderLinks}
+        class={flex({ layerStyle: "socialHeaderLinks" })}
       >
         <img src="/images/social-facebook.svg" />
         <span>Facebook</span></a
@@ -72,7 +60,7 @@ const socialHeaderLinks = flex({
       <a
         href="https://x.com/afranioboppre50"
         target="_blank"
-        class={socialHeaderLinks}
+        class={flex({ layerStyle: "socialHeaderLinks" })}
       >
         <img src="/images/social-twitter.svg" />
         <span>Twitter</span></a
@@ -141,15 +129,15 @@ const socialHeaderLinks = flex({
               bgColor: "orangeBox",
               w: "fit-content",
               p: "15px 30px 10px 30px",
-              m: ["-40px auto 0 auto", "-40px 0 0 20px"],
-              transform: "rotate(-2deg)",
+              m: ["-25px auto 0 auto", "-40px 0 0 20px"],
+              transform: ["none", "rotate(-2deg)"],
             })}
           >
             Ver. Afrânio Boppré
           </h2>
           <div
             class={css({
-              p: ["20px 30px 30px 30px", undefined, "20px 50px 30px 50px"],
+              p: ["20px 20px 20px 20px", undefined, "20px 50px 30px 50px"],
             })}
           >
             <p
@@ -175,6 +163,160 @@ const socialHeaderLinks = flex({
               POR SUA TRAJETÓRIA E ATUAÇÃO EXEMPLAR, AFRÂNIO É UM VEREADOR
               NECESSÁRIO.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="commitments"
+      class={css({
+        bgColor: "beigeBg",
+        py: "60px",
+        bgImage: [undefined, "url(/images/bg-florianopolis.svg)"],
+        bgRepeat: "no-repeat",
+        bgPosition: [undefined, "160% -10px", "120% -15px", "110% -120px"],
+        bgSize: [undefined, "90%", "75%", "50%"],
+      })}
+    >
+      <div
+        class={css({
+          layerStyle: "internalContent",
+        })}
+      >
+        <h1
+          class={css({
+            textStyle: "titleFirstLevel",
+            textAlign: ["center", "left"],
+            color: "brownBox",
+            pb: "60px",
+          })}
+        >
+          Compromissos
+        </h1>
+        <div
+          class={flex({
+            maxW: "1300px",
+            mx: "auto",
+            gap: ["0", "40px"],
+            flexDirection: ["column", "row"],
+          })}
+        >
+          <div
+            class={css({
+              flexBasis: [undefined, "40%"],
+            })}
+          >
+            <div
+              class={css({
+                layerStyle: "basicBox",
+              })}
+            >
+              <h2
+                class={css({
+                  bgColor: "greenBox",
+                })}
+              >
+                Qualidade de vida
+              </h2>
+              <p class={css({ bgColor: "orangeBox" })}>
+                Florianópolis pode se desenvolver sem deixar de ser um bom lugar
+                para se viver. O crescimento de uma cidade não necessariamente
+                promove desenvolvimento. Ao contrário, pode até gerar perda de
+                qualidade de vida. O crescimento sem infraestrutura coloca a
+                cidade em um ciclo vicioso. Nosso mandato sempre esteve voltado
+                para a necessidade de quebrar esse ciclo, parar o caos e
+                defender a qualidade de vida na cidade.
+              </p>
+            </div>
+            <div
+              class={css({
+                layerStyle: "basicBox",
+              })}
+            >
+              <h2
+                class={css({
+                  bgColor: "orangeBox",
+                })}
+              >
+                Cultura
+              </h2>
+              <p class={css({ color: "white", bgColor: "brownBox" })}>
+                Respeitar a diversidade, apoiar eventos de vários setores,
+                defender nossas tradições, patrimônio histórico, folclore,
+                valorizar artistas locais, estimular arte-educação nas
+                comunidades, fortalecer as conferências de cultura, o conselho
+                municipal e lutar pela aplicação do Plano Municipal de Cultura é
+                compromisso do nosso mandato.
+              </p>
+            </div>
+          </div>
+          <div
+            class={css({
+              flexBasis: [undefined, "60%"],
+            })}
+          >
+            <div
+              class={css({
+                layerStyle: "basicBox",
+              })}
+            >
+              <h2
+                class={css({
+                  bgColor: "redBox",
+                })}
+              >
+                Democracia e participação social
+              </h2>
+              <p class={css({ color: "white", bgColor: "blueBox" })}>
+                Não há maneira melhor de viver em sociedade do que a democracia.
+                Democracia é mais do que o ato de votar e ser votado. A
+                participação popular por meio de audiências públicas, tribunas
+                livres, conselhos, orçamento participativo deve ser regra e não
+                favor.
+              </p>
+            </div>
+            <div
+              class={css({
+                layerStyle: "basicBox",
+              })}
+            >
+              <h2
+                class={css({
+                  bgColor: "orangeBox",
+                })}
+              >
+                Transparência e serviço público
+              </h2>
+              <p class={css({ color: "white", bgColor: "redBox" })}>
+                O serviço público em Florianópolis vem sendo atacado. Saúde,
+                educação, Comcap, mobilidade e saneamento são áreas estratégicas
+                que precisam de boa gestão e compromisso. É NECESSÁRIO garantir
+                transparência para acabar com a corrupção e respeitar a
+                cidadania.
+              </p>
+            </div>
+            <div
+              class={css({
+                layerStyle: "basicBox",
+              })}
+            >
+              <h2
+                class={css({
+                  bgColor: "black",
+                  color: "white",
+                })}
+              >
+                Meio ambiente
+              </h2>
+              <p class={css({ color: "white", bgColor: "greenBox" })}>
+                A natureza nos deu farta riqueza. No entanto, a expansão urbana
+                descontrolada e guiada pela lógica de mercado sem planejamento
+                estratégico está minando a qualidade de vida, seja na Ilha ou no
+                Continente. A degradação ambiental da nossa cidade exige mudança
+                de paradigma. O respeito ao meio ambiente é compromisso do nosso
+                mandato.
+              </p>
+            </div>
           </div>
         </div>
       </div>

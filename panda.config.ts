@@ -23,8 +23,12 @@ export default defineConfig({
       tokens: {
         colors: {
           greenHeader: { value: "#00D087" },
+          greenBox: { value: "#8FE300" },
           orangeBox: { value: "#FF9619" },
+          blueBox: { value: "#0085FF" },
           redBox: { value: "#FF503D" },
+          beigeBg: { value: "#F1EAD9" },
+          brownBox: { value: "#601C07" },
         },
         spacing: {
           internalContentXPadding: { value: "20px" },

@@ -2,11 +2,47 @@ import { defineLayerStyles } from "@pandacss/dev"
 
 export const layerStyles = defineLayerStyles({
   internalContent: {
-    description: "home internal content basic styles",
+    description: "Home internal content basic styles.",
     value: {
       maxW: "internalContentMaxWidth",
       mx: "auto",
       px: "internalContentXPadding",
+    },
+  },
+  socialHeaderLinks: {
+    description: "Header social links styles.",
+    value: {
+      alignItems: "center",
+      mx: [undefined, "20px", "10px"],
+      h: "30px",
+      fontFamily: "GeneralSansSemibold, sans-serif",
+      fontSize: "18px",
+      textShadow: "0px 3px 6px #00000029",
+      "& img": { mr: "10px", h: [undefined, "30px", "24px"] },
+      "& span": { display: ["none", undefined, "inline"] },
+      hideBelow: "sm !important",
+    },
+  },
+  basicBox: {
+    description: "Basic text box styles.",
+    value: {
+      mb: "60px",
+      "& h2": {
+        textStyle: "titleSecondLevel",
+        textAlign: ["center", "left"],
+        w: "fit-content",
+        zIndex: "2",
+        pos: "relative",
+        m: ["0 auto", "0 30px"],
+        p: "7px 10px 2px 10px",
+      },
+      "& p": {
+        zIndex: "1",
+        p: ["35px 20px 20px 20px", "35px 30px 20px 30px"],
+        textStyle: "body",
+        mt: ["-15px", "-20px"],
+        rounded: "boxRadius",
+      },
     },
   },
 })

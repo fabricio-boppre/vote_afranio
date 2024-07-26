@@ -16,8 +16,8 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: "venice-blvd",
       fontWeight: "bold",
-      fontSize: ["25px", undefined, "30px", "40px"],
-      lineHeight: ["25px", undefined, "30px", "40px"],
+      fontSize: ["25px", undefined, "30px", "35px"],
+      lineHeight: ["25px", undefined, "30px", "35px"],
     },
   },
   body: {
@@ -25,7 +25,7 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: "GeneralSansMedium, sans-serif",
       fontSize: ["20px", undefined, undefined, "26px"],
-      lineHeight: ["26px", undefined, undefined, "32px"],
+      lineHeight: ["28px", undefined, undefined, "34px"],
     },
   },
 })
