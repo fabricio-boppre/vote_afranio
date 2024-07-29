@@ -150,3 +150,6 @@
 .no-webp > body > section#welcome {
   background-image: url(/images/afranio_ponte.jpg);
 }
+.no-webp > body > section#gallery {
+  display: none;
+}

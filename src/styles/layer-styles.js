@@ -23,6 +23,13 @@ export const layerStyles = defineLayerStyles({
       hideBelow: "sm !important",
     },
   },
+  galleryImage: {
+    description: "Gallery images styles.",
+    value: {
+      width: ["50%", undefined, undefined, "25%"],
+      height: "auto",
+    },
+  },
   basicBox: {
     description: "Basic text box styles.",
     value: {
