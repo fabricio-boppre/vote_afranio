@@ -148,7 +148,7 @@
 
 /* FALLBACKS TO NO SUPPORTING OF WEBP: */
 .no-webp > body > section#welcome {
-  background-image: url(/images/afranio_ponte.jpg);
+  background-image: url(/images/afranio_ponte_big.jpg);
 }
 .no-webp > body > section#gallery {
   display: none;

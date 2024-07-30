@@ -71,7 +71,12 @@ import { flex } from "../../styled-system/patterns"
       id="welcome"
       class={flex({
         alignItems: "flex-end",
-        bgImage: "url(/images/afranio_ponte.webp)",
+        bgImage: [
+          "url(/images/afranio_ponte_small.webp)",
+          undefined,
+          "url(/images/afranio_ponte_medium.webp)",
+          "url(/images/afranio_ponte_big.webp)",
+        ],
         bgRepeat: "no-repeat",
         bgPosition: "center top",
         bgSize: "cover",
