@@ -11,7 +11,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.12.2"
+    "astro": "^4.12.2",
+    "astro-page-insight": "^0.8.5"
   },
   "devDependencies": {
     "@pandacss/dev": "^0.44.0",
