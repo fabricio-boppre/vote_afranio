@@ -28,4 +28,12 @@ export const textStyles = defineTextStyles({
       lineHeight: ["28px", undefined, undefined, "34px"],
     },
   },
+  footer: {
+    description: "Principal text style.",
+    value: {
+      fontFamily: "GeneralSansMedium, sans-serif",
+      fontSize: "14px",
+      lineHeight: "24px",
+    },
+  },
 })

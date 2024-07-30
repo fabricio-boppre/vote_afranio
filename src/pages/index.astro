@@ -72,9 +72,9 @@ import { flex } from "../../styled-system/patterns"
       class={flex({
         alignItems: "flex-end",
         bgImage: [
-          "url(/images/afranio_ponte_small.webp)",
-          undefined,
           "url(/images/afranio_ponte_medium.webp)",
+          undefined,
+          undefined,
           "url(/images/afranio_ponte_big.webp)",
         ],
         bgRepeat: "no-repeat",
@@ -114,7 +114,7 @@ import { flex } from "../../styled-system/patterns"
           class={css({
             textStyle: "titleFirstLevel",
             flexBasis: [undefined, "40%"],
-            p: ["0 0 40px 0", "0 20px 0 0"],
+            p: ["0 0 30px 0", "0 20px 0 0"],
             textAlign: ["center", "left"],
           })}
         >
@@ -177,7 +177,7 @@ import { flex } from "../../styled-system/patterns"
       id="commitments"
       class={css({
         bgColor: "beigeBg",
-        py: "60px",
+        py: ["60px 0", "60px"],
         bgImage: [undefined, "url(/images/bg-florianopolis.svg)"],
         bgRepeat: "no-repeat",
         bgPosition: [undefined, "160% -10px", "120% -15px", "110% -120px"],
@@ -194,7 +194,7 @@ import { flex } from "../../styled-system/patterns"
             textStyle: "titleFirstLevel",
             textAlign: ["center", "left"],
             color: "brownBox",
-            pb: "60px",
+            pb: ["40px", "60px"],
           })}
         >
           Compromissos
@@ -350,5 +350,150 @@ import { flex } from "../../styled-system/patterns"
         class={css({ layerStyle: "galleryImage" })}
       />
     </section>
+
+    <section
+      id="contact"
+      class={css({
+        layerStyle: "internalContent",
+        my: ["60px 40px", "80px 60px", "100px 80px", "120px 100px"],
+      })}
+    >
+      <div
+        class={flex({
+          alignItems: ["center", "flex-start"],
+          flexDirection: ["column", "row"],
+        })}
+      >
+        <h1
+          class={css({
+            textStyle: "titleFirstLevel",
+            flexBasis: [undefined, "40%"],
+            p: ["0 0 30px 0", "0 20px 0 0"],
+            textAlign: ["center", "left"],
+            color: "greenHeader",
+          })}
+        >
+          Faça parte da nossa campanha
+        </h1>
+        <div
+          class={css({
+            flexBasis: [undefined, "60%"],
+          })}
+        >
+          <p>
+            Aguardando definição do Hiago se ele irá desenhar o layout com os
+            itens abaixo:
+          </p>
+          <ul>
+            <li>1) Adicionar as informações de contato</li>
+            <li>2) Incluir um link de contato via WhatsApp do Mandato</li>
+            <li>
+              3) Ainda manter o formulário utilizando o Google incorporado,
+              preferencialmente
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="goodbye"
+      class={css({
+        bgImage: [
+          "url(/images/goodbye_small.webp)",
+          "url(/images/goodbye_medium.webp)",
+          undefined,
+          "url(/images/goodbye_big.webp)",
+        ],
+        bgRepeat: "no-repeat",
+        bgPosition: ["left top", "center top"],
+        h: ["550px", "730px"],
+      })}
+    >
+      <div
+        class={flex({
+          layerStyle: "internalContent",
+          justifyContent: ["center", "flex-start"],
+          h: "100%",
+        })}
+      >
+        <img
+          class={css({
+            h: "auto",
+            w: ["450px", "550px"],
+          })}
+          src="/images/logo-big.svg"
+          alt="Afrânio 50100"
+        />
+      </div>
+    </section>
+
+    <footer
+      class={css({
+        bgColor: "#1A1A1A",
+        p: "60px 20px",
+        textStyle: "footer",
+      })}
+    >
+      <div
+        class={flex({
+          justifyContent: ["center"],
+          flexWrap: ["nowrap", "wrap"],
+          flexDirection: ["column", "row"],
+          gap: ["20px", "40px"],
+        })}
+      >
+        <a
+          href="https://www.instagram.com/afranioboppre50/"
+          target="_blank"
+          class={flex({ layerStyle: "socialFooterLinks" })}
+        >
+          <img src="/images/social-instagram.svg" />
+          <span>Instagram</span></a
+        >
+        <a
+          href="https://www.threads.net/@afranioboppre50"
+          target="_blank"
+          class={flex({ layerStyle: "socialFooterLinks" })}
+        >
+          <img src="/images/social-threads.svg" />
+          <span>Threads</span></a
+        >
+        <a
+          href="https://www.facebook.com/afranioboppre50"
+          target="_blank"
+          class={flex({ layerStyle: "socialFooterLinks" })}
+        >
+          <img src="/images/social-facebook.svg" />
+          <span>Facebook</span></a
+        >
+        <a
+          href="https://x.com/afranioboppre50"
+          target="_blank"
+          class={flex({ layerStyle: "socialFooterLinks" })}
+        >
+          <img src="/images/social-twitter.svg" />
+          <span>Twitter</span></a
+        >
+      </div>
+      <div
+        class={css({
+          color: "white",
+          pt: "20px",
+          textAlign: "center",
+        })}
+      >
+        Campanha à vereador Afrânio Boppré
+      </div>
+      <div
+        class={css({
+          color: "#AFAFAF",
+          pt: "10px",
+          textAlign: "center",
+        })}
+      >
+        CNPJ: 0000 00000 000 0000
+      </div>
+    </footer>
   </body>
 </html>

@@ -52,4 +52,15 @@ export const layerStyles = defineLayerStyles({
       },
     },
   },
+  socialFooterLinks: {
+    description: "Header social links styles.",
+    value: {
+      alignItems: "center",
+      mx: ["auto", "0"],
+      h: "24px",
+      textShadow: "0px 3px 6px #00000029",
+      "& img": { mr: "10px", h: "24px", w: "auto" },
+      color: "white",
+    },
+  },
 })
