@@ -206,8 +206,39 @@ import { flex } from "../../styled-system/patterns"
             Compromissos
           </h1>
           <div
+            class={css({
+              maxW: "internalContentMediumWidth",
+              mx: "auto",
+            })}
+          >
+            <h2
+              class={css({
+                textStyle: "titleSecondLevel",
+                bgColor: "orangeBox",
+                w: "fit-content",
+                p: "10px 10px 2px 10px",
+              })}
+            >
+              CUIDAR DE FLORIANÓPOLIS É A MINHA MISSÃO
+            </h2>
+            <p
+              class={css({
+                textStyle: "body",
+                color: "brownBox",
+                maxW: "700px",
+                my: ["20px 40px", "20px 60px"],
+              })}
+            >
+              O papel do vereador é estar atento e trabalhar. Deve se conectar
+              com as demandas mais sentidas e imediatas do povo, estar preparado
+              para se antecipar aos problemas e apontar caminhos para o futuro
+              da cidade. Cuidar das pessoas e do território. Essa missão exige
+              desprendimento e muita vontade. É assim que penso e faço.
+            </p>
+          </div>
+          <div
             class={flex({
-              maxW: "1300px",
+              maxW: "internalContentMediumWidth",
               mx: "auto",
               gap: ["0", "40px"],
               flexDirection: ["column", "row"],
@@ -276,6 +307,7 @@ import { flex } from "../../styled-system/patterns"
                 <h2
                   class={css({
                     bgColor: "redBox",
+                    color: "white",
                   })}
                 >
                   Democracia e participação social
@@ -321,7 +353,7 @@ import { flex } from "../../styled-system/patterns"
                 >
                   Meio ambiente
                 </h2>
-                <p class={css({ color: "white", bgColor: "greenBox" })}>
+                <p class={css({ color: "#012116", bgColor: "greenBox" })}>
                   A natureza nos deu farta riqueza. No entanto, a expansão
                   urbana descontrolada e guiada pela lógica de mercado sem
                   planejamento estratégico está minando a qualidade de vida,

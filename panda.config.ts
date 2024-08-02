@@ -36,6 +36,7 @@ export default defineConfig({
         sizes: {
           headerHeight: { value: "100px" }, // --sizes-header-height
           internalContentMaxWidth: { value: "1500px" },
+          internalContentMediumWidth: { value: "1300px" },
           bigImageBottomWhiteSpace: { value: "50px" }, // --sizes-big-image-bottom-white-space
         },
         radii: {
