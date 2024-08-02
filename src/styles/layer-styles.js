@@ -33,7 +33,7 @@ export const layerStyles = defineLayerStyles({
   basicBox: {
     description: "Basic text box styles.",
     value: {
-      mb: "60px",
+      mb: ["40px", "60px"],
       "& h2": {
         textStyle: "titleSecondLevel",
         textAlign: ["center", "left"],
