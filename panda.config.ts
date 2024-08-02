@@ -27,7 +27,7 @@ export default defineConfig({
           orangeBox: { value: "#FF9619" },
           blueBox: { value: "#0085FF" },
           redBox: { value: "#FF503D" },
-          beigeBg: { value: "#F1EAD9" },
+          beigeBg: { value: "#F2EBD9" },
           brownBox: { value: "#601C07" },
         },
         spacing: {

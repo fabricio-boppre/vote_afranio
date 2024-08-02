@@ -102,10 +102,14 @@ import { flex } from "../../styled-system/patterns"
 
     <section
       id="about"
-      class={css({ layerStyle: "internalContent", my: "120px 100px" })}
+      class={css({
+        py: "120px 100px",
+        bgColor: "beigeBg",
+      })}
     >
       <div
         class={flex({
+          layerStyle: "internalContent",
           alignItems: ["center", "flex-start"],
           flexDirection: ["column", "row"],
         })}
@@ -113,6 +117,7 @@ import { flex } from "../../styled-system/patterns"
         <h1
           class={css({
             textStyle: "titleFirstLevel",
+            color: "redBox",
             flexBasis: [undefined, "40%"],
             p: ["0 0 30px 0", "0 20px 0 0"],
             textAlign: ["center", "left"],
@@ -122,7 +127,7 @@ import { flex } from "../../styled-system/patterns"
         </h1>
         <div
           class={css({
-            bgColor: "redBox",
+            bgColor: "brownBox",
             mt: "40px",
             rounded: "boxRadius",
             flexBasis: [undefined, "60%"],
@@ -131,7 +136,8 @@ import { flex } from "../../styled-system/patterns"
           <h2
             class={css({
               textStyle: "titleSecondLevel",
-              bgColor: "orangeBox",
+              bgColor: "redBox",
+              color: "white",
               w: "fit-content",
               p: "15px 30px 10px 30px",
               m: ["-25px auto 0 auto", "-40px 0 0 20px"],
@@ -162,7 +168,7 @@ import { flex } from "../../styled-system/patterns"
               class={css({
                 textStyle: "body",
                 fontFamily: "GeneralSansBold",
-                color: "black",
+                color: "orangeBox",
               })}
             >
               POR SUA TRAJETÓRIA E ATUAÇÃO EXEMPLAR, AFRÂNIO É UM VEREADOR
