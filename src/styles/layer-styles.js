@@ -52,6 +52,20 @@ export const layerStyles = defineLayerStyles({
       },
     },
   },
+  socialHelpLinks: {
+    description: "Help section social links styles.",
+    value: {
+      fontFamily: "GeneralSansMedium, sans-serif",
+      fontSize: ["20px", undefined, undefined, "24px"],
+      lineHeight: ["28px", undefined, undefined, "30px"],
+      alignItems: "center",
+      mx: ["auto", "0"],
+      h: ["28px", undefined, undefined, "30px"],
+      textShadow: "0px 3px 6px #00000029",
+      "& img": { mr: "10px", h: "24px", w: "auto" },
+      color: "white",
+    },
+  },
   socialFooterLinks: {
     description: "Header social links styles.",
     value: {

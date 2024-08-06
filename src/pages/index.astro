@@ -438,6 +438,103 @@ import { flex } from "../../styled-system/patterns"
     </section>
 
     <section
+      id="help"
+      class={css({ py: ["60px 0", "100px 0"], bgColor: "blueDarkBg" })}
+    >
+      <div
+        class={flex({
+          layerStyle: "internalContent",
+          alignItems: "center",
+          flexDirection: ["column", undefined, "row"],
+          gap: ["40px", undefined, "60px"],
+          flexWrap: ["nowrap", undefined, "wrap", "nowrap"],
+        })}
+      >
+        <h1
+          class={css({
+            textStyle: "titleFirstLevel",
+            color: "white",
+            flex: [undefined, undefined, "1 0 100%", "0 1 40%"],
+            textAlign: ["center", undefined, "left"],
+          })}
+        >
+          Como você pode ajudar
+        </h1>
+
+        <div
+          class={css({
+            flex: [undefined, undefined, "0 1 45%", "0 1 30%"],
+          })}
+        >
+          <img src="/images/vaquinha.svg" />
+        </div>
+
+        <div
+          class={css({
+            flex: [undefined, undefined, "0 1 45%", "0 1 30%"],
+          })}
+        >
+          <h2
+            class={css({
+              textStyle: "titleSecondLevel",
+              textAlign: ["center", undefined, "left"],
+              color: "greenHeader",
+              pb: "20px",
+            })}
+          >
+            ACOMPANHE NOSSAS REDES SOCIAIS:
+          </h2>
+          <div
+            class={flex({
+              flexWrap: ["nowrap", "wrap"],
+              flexDirection: ["column", "row"],
+              rowGap: "10px",
+              columnGap: "40px",
+            })}
+          >
+            <a
+              href="https://www.instagram.com/afranioboppre50/"
+              target="_blank"
+              class={flex({ layerStyle: "socialHelpLinks" })}
+            >
+              <img src="/images/social-instagram.svg" />
+              <span>Instagram</span></a
+            >
+            <a
+              href="https://www.tiktok.com/@afranioboppre50"
+              target="_blank"
+              class={flex({ layerStyle: "socialHelpLinks" })}
+            >
+              <img src="/images/social-tiktok.svg" />
+              <span>TikTok</span></a
+            >
+            <a
+              href="https://www.facebook.com/afranioboppre50"
+              target="_blank"
+              class={flex({ layerStyle: "socialHelpLinks" })}
+            >
+              <img src="/images/social-facebook.svg" />
+              <span>Facebook</span></a
+            >
+            <a
+              href="https://x.com/afranioboppre50"
+              target="_blank"
+              class={flex({ layerStyle: "socialHelpLinks" })}
+            >
+              <img src="/images/social-twitter.svg" />
+              <span>Twitter</span></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        class={css({ h: "70px", mt: ["60px", "100px"], bgColor: "blueBox" })}
+      >
+      </div>
+    </section>
+
+    <section
       id="goodbye"
       class={css({
         bgImage: [

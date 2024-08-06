@@ -25,6 +25,7 @@ export default defineConfig({
           greenHeader: { value: "#00D087" },
           greenBox: { value: "#8FE300" },
           orangeBox: { value: "#FF9619" },
+          blueDarkBg: { value: "#0955CE" },
           blueBox: { value: "#0085FF" },
           redBox: { value: "#FF503D" },
           beigeBg: { value: "#F2EBD9" },
