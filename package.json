@@ -15,7 +15,7 @@
     "astro-page-insight": "^0.8.5"
   },
   "devDependencies": {
-    "@pandacss/dev": "^0.44.0",
+    "@pandacss/dev": "^0.45.0",
     "eslint": "^9.8.0",
     "eslint-plugin-astro": "^1.2.3",
     "prettier": "^3.3.3",
