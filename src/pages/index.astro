@@ -1,4 +1,5 @@
 ---
+import { SEO } from "astro-seo"
 import "../styles/index.css"
 import { css } from "../../styled-system/css"
 import { flex } from "../../styled-system/patterns"
@@ -20,6 +21,25 @@ import { flex } from "../../styled-system/patterns"
     <title>Afrânio 2024</title>
     <meta name="robots" content="noindex" />
     <script is:inline src="/scripts/modernizr-custom.js"></script>
+    <SEO
+      title="Afrânio 2024"
+      description="Site da campanha para vereador de Afrânio (50100) - Florianópolis, SC."
+      openGraph={{
+        basic: {
+          title: "Afrânio 2024",
+          type: "website",
+          url: "https://vote.afranio.org.br",
+          image: "https://vote.afranio.org.br/images/logo-open-graph.png",
+        },
+        optional: {
+          description:
+            "Site da campanha para vereador de Afrânio (50100) - Florianópolis, SC.",
+        },
+      }}
+      twitter={{
+        card: "summary_large_image",
+      }}
+    />
   </head>
   <body class={css({ maxW: "1920px", m: "0 auto" })}>
     <header
