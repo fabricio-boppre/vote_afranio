@@ -42,6 +42,7 @@ export default defineConfig({
         },
         radii: {
           boxRadius: { value: "20px" },
+          boxRadiusSmall: { value: "10px" },
         },
       },
     },

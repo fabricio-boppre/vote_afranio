@@ -414,31 +414,95 @@ import { flex } from "../../styled-system/patterns"
           <h1
             class={css({
               textStyle: "titleFirstLevel",
-              flexBasis: [undefined, "40%"],
+              flexBasis: ["100%", "40%"],
               p: ["0 0 40px 0", "0 20px 0 0"],
               textAlign: ["center", "left"],
-              color: "greenHeader",
+              color: "orangeBox",
             })}
           >
             Faça parte da nossa campanha
           </h1>
           <div
             class={css({
-              flexBasis: [undefined, "60%"],
+              flexBasis: ["100%", "60%"],
+              w: "100%",
             })}
           >
-            <p>
-              Aguardando definição do Hiago se ele irá desenhar o layout com os
-              itens abaixo:
-            </p>
-            <ul>
-              <li>1) Adicionar as informações de contato</li>
-              <li>2) Incluir um link de contato via WhatsApp do Mandato</li>
-              <li>
-                3) Ainda manter o formulário utilizando o Google incorporado,
-                preferencialmente
-              </li>
-            </ul>
+            <div
+              class={css({
+                bgColor: "white",
+                p: "40px 30px",
+                maxW: ["100%", "575px"],
+                mx: "auto",
+                rounded: "boxRadius",
+                textAlign: "center",
+              })}
+            >
+              <h2
+                class={css({
+                  textStyle: "titleSecondLevel",
+                  color: "greenHeader",
+                  pb: "20px",
+                })}
+              >
+                ENTRE EM CONTATO
+              </h2>
+              <a href=".">
+                <div
+                  class={css({
+                    bgColor: "blueBox",
+                    p: "10px",
+                    rounded: "boxRadiusSmall",
+                    textAlign: "center",
+                    textStyle: "body",
+                    fontWeight: "bold",
+                    color: "white",
+                  })}
+                >
+                  Acesse o formulário
+                </div>
+              </a>
+              <div
+                class={css({
+                  bg: "linear-gradient(180deg, rgba(0,0,0,0) calc(50% - 1px), rgba(0,0,0,1) calc(50%), rgba(0,0,0,0) 50%)",
+                  h: "38px",
+                  my: "5px",
+                })}
+              >
+                <span
+                  class={css({
+                    bgColor: "white",
+                    px: "10px",
+                    fontFamily: "GeneralSansMedium, sans-serif",
+                    fontSize: "20px",
+                    lineHeight: "34px",
+                  })}>ou</span
+                >
+              </div>
+              <a href=".">
+                <div
+                  class={flex({
+                    alignItems: "center",
+                    justifyContent: "center",
+                    bgColor: "greenHeader",
+                    p: "10px",
+                    rounded: "boxRadiusSmall",
+                    textAlign: "center",
+                    textStyle: "body",
+                    fontWeight: "bold",
+                    color: "white",
+                    gap: "10px",
+                  })}
+                >
+                  <span>Converse pelo WhatsApp</span>
+                  <img
+                    class={css({ h: "30px" })}
+                    src="/images/logo-whatsapp.svg"
+                    alt="WhatsApp"
+                  />
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </section>
