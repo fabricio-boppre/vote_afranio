@@ -446,7 +446,7 @@ import { flex } from "../../styled-system/patterns"
               >
                 ENTRE EM CONTATO
               </h2>
-              <a href=".">
+              <a href="." target="_blank">
                 <div
                   class={css({
                     bgColor: "blueBox",
@@ -478,7 +478,10 @@ import { flex } from "../../styled-system/patterns"
                   })}>ou</span
                 >
               </div>
-              <a href=".">
+              <a
+                href="https://wa.me/554891600550?text=Ol%C3%A1,%20quero%20fazer%20parte%20da%20campanha!"
+                target="_blank"
+              >
                 <div
                   class={flex({
                     alignItems: "center",
@@ -540,7 +543,7 @@ import { flex } from "../../styled-system/patterns"
           alignItems: "center",
           flexDirection: ["column", undefined, "row"],
           gap: ["40px", undefined, "60px"],
-          flexWrap: ["nowrap", undefined, "wrap", "nowrap"],
+          flexWrap: [undefined, undefined, "wrap", "nowrap"],
         })}
       >
         <h1
@@ -557,10 +560,11 @@ import { flex } from "../../styled-system/patterns"
         <div
           class={css({
             flex: [undefined, undefined, "0 1 45%", "0 1 30%"],
+            maxW: "460px",
           })}
         >
           <a href="https://doa.la/afranio-boppre" target="_blank"
-            ><img src="/images/vaquinha.svg" /></a
+            ><img src="/images/vaquinha.png" /></a
           >
         </div>
 
@@ -633,32 +637,18 @@ import { flex } from "../../styled-system/patterns"
       id="goodbye"
       class={css({
         bgImage: [
+          "url(/images/goodbye_mini.webp)",
           "url(/images/goodbye_small.webp)",
           "url(/images/goodbye_medium.webp)",
           undefined,
           "url(/images/goodbye_big.webp)",
         ],
         bgRepeat: "no-repeat",
-        bgPosition: ["left top", "right top"],
-        h: ["550px", "730px"],
+        bgPosition: "center",
+        bgColor: "greenBox",
+        h: ["680px", "400px", "487px", undefined, "730px"],
       })}
     >
-      <div
-        class={flex({
-          layerStyle: "internalContent",
-          justifyContent: ["center", "flex-start"],
-          h: "100%",
-        })}
-      >
-        <img
-          class={css({
-            h: "auto",
-            w: ["450px", "550px"],
-          })}
-          src="/images/logo-big.svg"
-          alt="Afrânio 50100"
-        />
-      </div>
     </section>
 
     <footer
