@@ -151,8 +151,10 @@
   background-image: url(/images/afranio_ponte_big.jpg);
 }
 .no-webp > body > section#goodbye {
-  background-image: url(/images/goodbye_big.jpg);
+  background-image: url(/images/goodbye_mini.jpg);
   background-position: center top;
+  height: 680px;
+  background-color: #8fe300;
 }
 .no-webp > body > section#gallery {
   display: none;
